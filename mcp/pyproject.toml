@@ -1,0 +1,12 @@
+[project]
+name = "mcp-example"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "gradio[mcp]>=5.31.0",
+    "huggingface[cli]>=0.0.1",
+    "mcp[cli]>=1.9.0",
+    "smolagents[mcp]>=1.16.1",
+]

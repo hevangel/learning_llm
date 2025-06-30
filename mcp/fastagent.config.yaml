@@ -1,0 +1,20 @@
+# Default model for all agents
+default_model: "generic.phi4"  # Format: provider.model_name.reasoning_effort
+
+# Whether to automatically enable Sampling. Model seletion precedence is Agent > Default.
+auto_sampling: true
+
+# Execution engine (only asyncio is currently supported)
+execution_engine: "asyncio"
+
+generic:
+  api_key: "ollama"  # Default for Ollama, change as needed
+  base_url: "http://134.199.196.38:11434/v1"  # Default for Ollama
+
+mcp:
+  playwright:
+    command: "npx"
+    args: ["@playwright/mcp@latest"]
+
+
+

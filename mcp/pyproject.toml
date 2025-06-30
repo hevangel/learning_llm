@@ -5,6 +5,8 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "deprecated>=1.2.18",
+    "fast-agent-mcp>=0.2.25",
     "gradio[mcp]>=5.31.0",
     "huggingface-hub[mcp]>=0.32.1",
     "huggingface[cli]>=0.0.1",

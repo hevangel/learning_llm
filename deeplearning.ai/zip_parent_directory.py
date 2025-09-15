@@ -9,8 +9,8 @@ parent_dir = os.getcwd()
 for item in os.listdir(parent_dir):
     item_path = os.path.join(parent_dir, item)
     
-    # Only zip directories
-    if os.path.isdir(item_path):
+    # Only zip directories, skip if directory is called 'models'
+    if os.path.isdir(item_path) and item != "models":
         zip_filename = f"{item}.zip"
         with zipfile.ZipFile(zip_filename, 'w', zipfile.ZIP_DEFLATED) as zipf:
             for root, dirs, files in os.walk(item_path):
